@@ -1,0 +1,14 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: docker
+  image: plugins/docker
+  settings:
+    repo: docker.pkg.github.com/rus64/xmrig-workers/xmrig
+    registry: docker.pkg.github.com
+    username: rus64
+    password: 
+      from_secret: gh_registry_password
+    tags: latest
