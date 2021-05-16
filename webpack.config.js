@@ -19,6 +19,7 @@ module.exports = {
   mode: process.env.NODE_ENV,
   context: path.resolve(__dirname, 'src'),
   devServer: {
+    host: '0.0.0.0',
     contentBase: path.resolve(__dirname, 'public'),
     port: 8080,
     historyApiFallback: true
