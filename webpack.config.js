@@ -22,7 +22,9 @@ module.exports = {
     host: '0.0.0.0',
     contentBase: path.resolve(__dirname, 'public'),
     port: 8080,
-    historyApiFallback: true
+    historyApiFallback: true,
+    compress: true,
+    public: 'xmrig.russellyeo.dev'
   },
   module: {
     rules: [
